@@ -1,0 +1,57 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# Django & Database files
+*.sqlite3
+db.sqlite3
+*.log
+
+# PostgreSQL & MongoDB environment files
+*.dump
+*.db
+*.sql
+*.tar
+
+# Environment variables
+.env
+.env.local
+.env.production
+config/settings_local.py
+
+# Django migrations
+**/migrations/*.py
+**/migrations/*.pyc
+
+# Cache & Temporary files
+*.pid
+*.seed
+*.swp
+*.swo
+*.swn
+.DS_Store
+Thumbs.db
+
+# Celery & Redis
+celerybeat-schedule
+celerybeat.pid
+*.rdb
+
+# FastAPI & Uvicorn logs
+uvicorn.log
+*.db-journal
+
+# VS Code & JetBrains IDE settings
+.vscode/
+.idea/
+*.iml
+
+# Node.js dependencies (if frontend exists)
+node_modules/
+npm-debug.log
+yarn-error.log
