@@ -1,57 +1,130 @@
-# Byte-compiled / optimized / DLL files
+# Python & Django
 __pycache__/
-*.py[cod]
+*.pyc
+*.pyo
 *$py.class
-
-# Virtual environment
-venv/
-env/
-
-# Django & Database files
-*.sqlite3
-db.sqlite3
 *.log
-
-# PostgreSQL & MongoDB environment files
-*.dump
+*.sqlite3
 *.db
-*.sql
-*.tar
+.env
+.venv/
+venv/
+instance/
+media/
+staticfiles/
+celerybeat-schedule
+celerybeat.pid
 
-# Environment variables
+# Ignore Django migrations (optional)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Keep Python dependency files
+# requirements.txt
+# Pipfile.lock
+
+# PostgreSQL & MongoDB
+*.pgsql
+*.pg_dump
+*.pgpass
+*.psql_history
+
+# MongoDB
+*.bson
+*.json
+*.lock
+mongod.lock
+mongod.pid
+dump/
+data/db/
+
+# Frontend (ReactJS & Node.js)
+node_modules/
+# Keep package-lock.json
+# package-lock.json
+yarn.lock
+npm-debug.log*
+dist/
+build/
+
+# Ignore environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore Next.js cache
+.next/
+out/
+
+# Ignore React build files
+*.cache/
+
+# Backend (FastAPI, Uvicorn)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+instance/
+*.db
+*.sqlite3
+
+# Gunicorn/Uvicorn logs
+gunicorn.log
+gunicorn.access.log
+gunicorn.error.log
+
+# Ignore FastAPI .env files
 .env
 .env.local
 .env.production
-config/settings_local.py
+.env.test
 
-# Django migrations
-**/migrations/*.py
-**/migrations/*.pyc
+# Ignore compiled Cython files
+*.c
+*.so
+*.pyd
 
-# Cache & Temporary files
-*.pid
-*.seed
-*.swp
-*.swo
-*.swn
-.DS_Store
-Thumbs.db
+# Ignore API documentation (if generated)
+openapi.json
+docs/
 
-# Celery & Redis
+# Machine Learning (Scikit-learn, TensorFlow)
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.onnx
+*.tflite
+*.pb
+*.npz
+.ipynb_checkpoints/
+.mlflow/
+wandb/
+logs/
+
+# Redis & Celery
+*.rdb
+redis-dump.rdb
 celerybeat-schedule
 celerybeat.pid
-*.rdb
 
-# FastAPI & Uvicorn logs
-uvicorn.log
-*.db-journal
+# Docker
+docker-compose.override.yml
+.dockerignore
+*.container
+*.tar
 
-# VS Code & JetBrains IDE settings
-.vscode/
+# Kubernetes
+k8s/
+
+# JetBrains (PyCharm) & VS Code
 .idea/
 *.iml
+*.ipr
+*.iws
+out/
 
-# Node.js dependencies (if frontend exists)
-node_modules/
-npm-debug.log
-yarn-error.log
+.vscode/
+*.code-workspace
