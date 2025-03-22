@@ -128,3 +128,5 @@ out/
 
 .vscode/
 *.code-workspace
+
+/media/
